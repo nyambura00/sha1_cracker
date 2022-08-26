@@ -7,6 +7,7 @@ fn main()-> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
     if args.len() != 3 {
         println!("sha1_cracker: <wordlist.txt> <sha1_hash>");
+        println!("Not enough arguments.");
         return Ok(())
     }
 
